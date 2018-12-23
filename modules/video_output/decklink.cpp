@@ -1010,6 +1010,9 @@ end:
         pDLVideoFrame->Release();
 }
 
+/*
+* Funtoader: Does the actual video display rendering
+*/
 static void DisplayVideo(vout_display_t *, picture_t *picture, subpicture_t *)
 {
     picture_Release(picture);
@@ -1021,6 +1024,9 @@ static int ControlVideo(vout_display_t *vd, int query, va_list args)
     return VLC_EGENERIC;
 }
 
+/*
+* Funtoader: Opens video
+*/
 static int OpenVideo(vlc_object_t *p_this)
 {
     vout_display_t *vd = (vout_display_t *)p_this;

@@ -301,6 +301,9 @@ picture_t *picture_Hold( picture_t *p_picture )
     return p_picture;
 }
 
+/*
+* Funtoader: Called in DisplayVideo
+*/
 void picture_Release( picture_t *p_picture )
 {
     assert( p_picture != NULL );
